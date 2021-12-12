@@ -4,7 +4,7 @@ Log = _G.Log or {}
 
 local LogType = {
   Info = 1,
-  Warning = 2,
+  Warn = 2,
   Error = 3,
   Dump = 4,
 }
@@ -22,8 +22,8 @@ function Log.error(...)
   Log.log(LogType.Error, ...)
 end
 
-function Log.warning(...)
-  Log.log(LogType.Warning, ...)
+function Log.warn(...)
+  Log.log(LogType.Warn, ...)
 end
 
 function Log.info(...)
